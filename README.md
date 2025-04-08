@@ -25,9 +25,9 @@ Ideal para **streamers que transmiten en ambas plataformas**.
 Antes de comenzar, necesitás tener:
 
 1. [Node.js](https://nodejs.org/es/download) instalado.
-2. El navegador **Brave** instalado en tu PC.  
+2. El navegador Brave instalado en tu PC.  
    👉 Descarga oficial: [https://brave.com/es](https://brave.com/es)
-3. Una cuenta de **TikTok** (transmitiendo en vivo) y una de Kick (también transmitiendo).
+3. Una cuenta de TikTok y una de Kick la cual debe estar logueada en Brave.
 4. Tener la sesión iniciada en Kick desde Brave (recomendado con una cuenta secundaria que no tenga permisos de moderador en tu canal principal).
 
 ---
@@ -38,14 +38,11 @@ Antes de comenzar, necesitás tener:
 El navegador Brave debe estar instalado en esta ruta por defecto:
 C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe
 Si esta instalado en otra ruta puedes cambiarla en el código sin problemas. 
-
-                                              aqui pon el nombre de tu PC
 👉 Una vez que inicices sesión en tu canal de Kick en Brave se carga tu perfil y deberás poner tu nombre:
                                                aqui donde dice strafe 
                                                  va tu nombre owo
     options.addArguments("--user-data-dir=C:\\Users\\STRAFE\\AppData\\Local\\BraveSoftware\\Brave-Browser\\User Data");
     options.addArguments("--profile-directory=Default");
-
 
 🔽 ¿Cómo instalarlo y usarlo?
 1️⃣ Descargar el proyecto
@@ -97,19 +94,20 @@ STRAFECONNECTOR/
 │   └── config.json              # Archivo con las configuraciones (usuario de TikTok, link de Kick)
 │
 ├── services/
-│   ├── tiktokService.js        # Conexión y gestión de eventos desde TikTok
-│   └── kickService.js          # Envío de mensajes a Kick con Selenium
+│   ├── tiktokService.js         # Conexión y gestión de eventos desde TikTok
+│   └── kickService.js           # Envío de mensajes a Kick utilizando Selenium
 │
 ├── utils/
-│   ├── cleanMessage.js         # Limpieza de mensajes
-│   ├── preprocessMessage.js    # Preprocesamiento de comandos y filtros
-│   └── messageQueue.js         # Cola de mensajes y lógica de envío secuencial
+│   ├── cleanMessage.js          # Limpieza de mensajes
+│   ├── preprocessMessage.js     # Preprocesamiento de comandos y filtros
+│   └── messageQueue.js          # Cola de mensajes y lógica de envío secuencial
 │
 ├── browser/
-│   └── startBrowser.js         # Lógica para abrir el navegador con perfil de Brave
+│   └── startBrowser.js          # Lógica para abrir el navegador con perfil de Brave
 │
-├── index.js                    # Archivo principal que orquesta todo
-└── package.json                # Dependencias y scripts
+├── index.js                     # Archivo principal que orquesta todo
+│
+└── package.json                 # Dependencias y scripts del proyecto
 
 
 ---
