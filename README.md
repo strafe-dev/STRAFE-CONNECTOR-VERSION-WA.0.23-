@@ -86,30 +86,6 @@ node index.js
 ✅ Si todo está bien, se enviará automáticamente un mensaje en tu chat de Kick.
 🕐 El bot esperará a que inicies stream en TikTok para comenzar a leer los mensajes y enviarlos a Kick.
 
-ESTRUCTURA DEL PROYECTO 
-
-STRAFECONNECTOR/
-│
-config/
-config.json  Archivo con las configuraciones (usuario de TikTok, link de Kick)
-│
-services/
-tiktokService.js  Conexión y gestión de eventos desde TikTok
-kickService.js    Envío de mensajes a Kick utilizando Selenium
-│
-utils/
-cleanMessage.js     Limpieza de mensajes
-preprocessMessage.js Preprocesamiento de comandos y filtros
-messageQueue.js      Cola de mensajes y lógica de envío secuencial
-│
-browser/
-startBrowser.js   Lógica para abrir el navegador con perfil de Brave
-│
-index.js              Archivo principal que orquesta todo
-│
-package.json          Dependencias y scripts del proyecto
-
-
 ---
 
 
